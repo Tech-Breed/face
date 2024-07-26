@@ -10,33 +10,33 @@
   }
   
   // ScrollReveal JS
-  ScrollReveal({ distance: "30px", easing: "ease-in" });
+  // ScrollReveal({ distance: "30px", easing: "ease-in" });
   
-  ScrollReveal().reveal(".blend", {
-    delay: 300,
-    origin: "top",
-  });
+  // ScrollReveal().reveal(".blend", {
+  //   delay: 300,
+  //   origin: "top",
+  // });
   
-  ScrollReveal().reveal(".container1 .gradient-text", {
-    delay: 300,
-    origin: "top",
-  });
+  // ScrollReveal().reveal(".container1 .gradient-text", {
+  //   delay: 300,
+  //   origin: "top",
+  // });
   
-  ScrollReveal().reveal(".container1 .paragraph", {
-    delay: 800,
-    origin: "top",
-  });
+  // ScrollReveal().reveal(".container1 .paragraph", {
+  //   delay: 800,
+  //   origin: "top",
+  // });
   
-  ScrollReveal().reveal(".users-color-container", {
-    delay: 800,
-    origin: "top",
-  });
+  // ScrollReveal().reveal(".users-color-container", {
+  //   delay: 800,
+  //   origin: "top",
+  // });
   
-  ScrollReveal().reveal(".container4 .section", {
-    delay: 300,
-    origin: "bottom",
-    interval: 200,
-  });
+  // ScrollReveal().reveal(".container4 .section", {
+  //   delay: 300,
+  //   origin: "bottom",
+  //   interval: 200,
+  // });
   
 //   signature board
 
