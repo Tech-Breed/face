@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
 // document.addEventListener('DOMContentLoaded', () => {
 //   const signOnBoard = document.getElementById('signOnBoard');
 //   const signatureInput = document.getElementById('signatureInput');
