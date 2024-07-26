@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const data = await response.json();
       signOnBoard.innerHTML = ''; // Clear existing signatures
-      data.forEach(signature => addSignatureToBoard(signature.name));
+      data.forEach(signature => addSignatureToBoard(signature.name, getRandomColor()));
     } catch (error) {
       console.error('Error loading signatures:', error);
     }
@@ -74,18 +74,29 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      addSignatureToBoard(signature); // Add the new signature to the board
+      addSignatureToBoard(signature, getRandomColor()); // Add the new signature to the board
     } catch (error) {
       console.error('Error saving signature:', error);
     }
   };
 
   // Function to add a signature to the board
-  const addSignatureToBoard = (signature) => {
+  const addSignatureToBoard = (signature, color) => {
     const signatureElement = document.createElement('div');
     signatureElement.className = 'signature';
     signatureElement.textContent = signature;
+    signatureElement.style.backgroundColor = color;
     signOnBoard.appendChild(signatureElement);
+  };
+
+  // Function to get a random color
+  const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
   };
 
   // Event listener for the "Add Signature" button
@@ -103,7 +114,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // Periodically check for new signatures to keep the board updated
   setInterval(loadSignatures, 10000); // Check every 10 seconds
 });
-
-
-
-
