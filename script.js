@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const signOnBoard = document.getElementById('signOnBoard');
   const signatureInput = document.getElementById('signatureInput');
   const addSignatureButton = document.getElementById('addSignatureButton');
-  const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbySy3vzdauc0Qvuvij3y6pT_fsm_lYynKwmnEab-UxoqDATGV7uiIgjfPq8BmyJL2U/exec'; // Replace with your actual Web App URL
+  const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbw4PlI5m8L4-4hTuyGlpU1Ck-qnI-nXcz4DYm_s60fkYzPRWI2Sky7yX2-luFQonne58w/exec'; // Replace with your actual Web App URL
 
   // Function to load signatures from Google Sheets
   const loadSignatures = async () => {
