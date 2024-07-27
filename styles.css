@@ -359,9 +359,17 @@ a:visited {
 
 .slider-item, img{
   border-radius: 30px;
-  height: 100%;
+
 }
 
+
+.indicators .active a {background: #0e1b27;}
+.s1 {background: #3f51b5;}
+.s2 {background: #448aff;}
+.s3 {background: #03a9f4;}
+.s4 {background: #00bcd4;}
+.s5 {background: #009688;}
+.s6 {background: #4caf50;}
 
 
 /* section 2 */
