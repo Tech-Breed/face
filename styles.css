@@ -277,22 +277,15 @@ h1, h2, h3, h4, h5 {
 
 /* carousel */
 
+
 .section-header {
   display: block;
   margin-top: 20px;
   position: relative;
   text-align: center;
 }
-.section-header h1 {
-  color: #212121;
-  display: inline-block;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
-  padding: 0 0 24px;
-  position: relative;
-  z-index: 2;
-}
+
+
 .section-header h1:after {
   position: absolute;
   display: block;
@@ -306,23 +299,27 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
   background: #e6e9ec;
 }
+
 section {
   padding-bottom: 30px;
   overflow: hidden;
   position: relative;
 }
+
 a,
 a:link,
 a:visited {
   color: #212121;
   text-decoration: none;
 }
+
 .micro-slider {
   height: 480px;
   /* margin: 10px 0; */
   position: relative;
   width: 100%;
 }
+
 .micro-slider.fullwidth {
   height: 480px;
   /* margin: 64px 0; */
@@ -353,17 +350,35 @@ a:visited {
   width: 320px;
   cursor: pointer;
 }
-/*
-.slider-item:not(.active) {cursor: pointer;}
-*/
 
 .slider-item, img{
   border-radius: 30px;
 
 }
 
+/*
+.slider-item:not(.active) {cursor: pointer;}
+*/
 
-.indicators .active a {background: #0e1b27;}
+.indicators li {
+  color: #fff;
+  float: left;
+  height: 16px;
+  margin-right: 8px;
+  text-align: center;
+  width: 16px;
+}
+.indicators li:last-child {margin: 0;}
+.indicators a {
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #E6E9EC;
+  color: #FFF;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+.indicators .active a {background: #E6E9EC;}
 .s1 {background: #3f51b5;}
 .s2 {background: #448aff;}
 .s3 {background: #03a9f4;}
@@ -611,6 +626,7 @@ a:visited {
 
   /* ticket */
 
+
   .ticketContainer{
     display: flex;
     flex-direction: column;
@@ -625,7 +641,7 @@ a:visited {
 .ticketShadow{
     animation: bouncingShadow 0.6s ease-out infinite alternate;
     margin-top: 4px;
-    width: 95%;
+    width: 35%;
     height: 12px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -635,7 +651,6 @@ a:visited {
 .ticbut{
   text-align: center;
   border-radius: 10px;
-
 }
 
 /* Ticket Content */
@@ -755,7 +770,7 @@ input[type="text"] {
   width: calc(100% - 24px);
   max-width: 30%;
   margin-bottom: 10px;
-  border: 1px solid #333;
+  border: 1px solid #e4e70c;
   border-radius: 10px;
   margin-left: 5px;
 }
@@ -1066,6 +1081,8 @@ a {
       row-gap: 3.5rem;
     }
   }
+
+  
 
 
 
