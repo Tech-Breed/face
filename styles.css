@@ -359,6 +359,7 @@ a:visited {
 
 .slider-item, img{
   border-radius: 30px;
+  height: 100%;
 }
 
 
