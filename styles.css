@@ -357,15 +357,10 @@ a:visited {
 .slider-item:not(.active) {cursor: pointer;}
 */
 
+.slider-item, img{
+  border-radius: 30px;
+}
 
-
-.indicators .active a {background: #E6E9EC;}
-.s1 {background: #3f51b5;}
-.s2 {background: #448aff;}
-.s3 {background: #03a9f4;}
-.s4 {background: #00bcd4;}
-.s5 {background: #009688;}
-.s6 {background: #4caf50;}
 
 
 /* section 2 */
