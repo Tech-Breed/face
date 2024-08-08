@@ -335,7 +335,7 @@ a:visited {
 }
 
 .micro-slider {
-  height: 480px;
+  height: 490px;
   /* margin: 10px 0; */
   position: relative;
   width: 100%;
@@ -356,10 +356,11 @@ a:visited {
   transform-style: preserve-3d;
   transform-origin: 0 50%;
 }
+
 .slider-item {
-  background: #FFF;
-  box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
-  color: #FFF;
+ 
+  
+ 
   display: none;
   font-size: 72px;
   height: 320px;
@@ -395,14 +396,6 @@ a:visited {
   height: 16px;
   width: 16px;
 }
-.indicators .active a {background: #E6E9EC;}
-.s1 {background: #3f51b5;}
-.s2 {background: #448aff;}
-.s3 {background: #03a9f4;}
-.s4 {background: #00bcd4;}
-.s5 {background: #009688;}
-.s6 {background: #4caf50;}
-
 
 /* section 2 */
 
@@ -594,14 +587,21 @@ a:visited {
     text-decoration: none;
     color: #131131;
     background-color: #F9F9FC;
-    border: 3px solid #FF77A5;  
+    border: 3px solid slategray;  
     padding: 8px 16px;
     border-radius: 50px;
   }
+
+  
   
   #b1 a {
     color: #F9F9FC;
-    background-color:#FF77A5 ;
+    background-color:slategrey ;
+  }
+ 
+  #b1 a:hover {
+    color: #F9F9FC;
+    background-color:rgb(43, 50, 58) ;
   }
   
   .img {
@@ -622,7 +622,7 @@ a:visited {
   }
   
   .img3 {
-    background-image: url('images/70d964ecf9b5a7eef0f5441c9e2e75de.jpg');
+    background-image: url('images/image.gif');
   }
   
   
@@ -770,25 +770,29 @@ h1 {
   height: 400px;
   border-radius: 30px;
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap to the next line */
   align-items: flex-start;
   overflow-y: auto;
   word-wrap: break-word;
-  gap: 2px ;
+  gap: 5px 10px;
 
   margin-bottom: 20px;
 }
 
 .signature {
   margin: 0;
-  padding: 5px ;
-  background-color: #e0e0e0;
+  padding: 10px ;
+  font-size: medium;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  background-color: slategray;
   border-radius: 5px;
   flex: 1 1 100px; /* Ensure the signatures take up only as much space as needed */
-  max-width: calc(100% / 5 - 5px);; /* Prevent signatures from overflowing the board */
+  max-width: calc(100% / 3 - 5px);; /* Prevent signatures from overflowing the board */
   text-align: center;
+  height: 50px;
   box-sizing: border-box;
 }
 
