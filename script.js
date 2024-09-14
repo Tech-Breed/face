@@ -173,3 +173,15 @@ document.addEventListener('DOMContentLoaded', () => {
   //===== MICRO-SLIDER end
   
 });
+
+// Simple carousel functionality for featured cards (if needed)
+let currentIndex = 0;
+const cards = document.querySelectorAll('.featured-cards .card');
+
+function showNextCard() {
+    cards[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % cards.length;
+    cards[currentIndex].classList.add('active');
+}
+
+setInterval(showNextCard, 5000); // Switch card every 5 seconds
